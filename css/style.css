@@ -48,11 +48,6 @@ img {
 }
 
 
-@media screen and (max-width: 599px) {
-  .container {
-    width: 85%;
-  }
-}
 @media (min-width:600px) {
   .one-half {
       width: 46%;
