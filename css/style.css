@@ -19,6 +19,10 @@ p {
   font-weight: 100;
 }
 
+img {
+  max-width:100%;
+}
+
 /* GRID */
 .container {
   margin-right: auto;
@@ -43,19 +47,34 @@ p {
   margin:0 2% 20px;
 }
 
+@media (min-width: 480px) {
+  .container {
+    width: 464px;
+  }
+  .one-half {
+    width: 46%;
+  }
+}
+
+@media (min-width: 600px) {
+  .container {
+    width: 586px;
+  }
+  .one-half {
+    width: 46%;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
-  }
+    }
   .one-half {
     width: 46%;
   }
   .one-third {
     width:29.33333%;
-  }
-  .one-fourth {
-    width:21%;
-  }
+    }
   }
 
 @media (min-width: 992px) {
