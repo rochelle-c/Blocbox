@@ -49,16 +49,55 @@ img {
 
 @media screen and (max-width: 599px) {
   .container {
-    width: 85%;
+    width: 90%;
   }
+  .hero h1 {
+   font-size:36x;
+   font-weight: normal;
+   margin:50px 0 0;
+ }
+ .hero p {
+   font-size: 18px;
+   line-height: 22px;
+}
+header nav ul {
+  display:inline;
+  text-align: right;
+  float:right;
+  margin:0;
+}
+header nav ul > li.btn-outline {
+  padding: 8px 10px;
+  border: 2px solid #FFFFFF;
+  border-radius:4px;
+}
 }
 
 @media (min-width:600px) {
   .one-half {
       width: 46%;
     }
+      .hero h1 {
+   font-size:42px;
+   font-weight: normal;
+   margin:95px 0 0;
+ }
+  .hero p {
+   font-size: 20px;
+   line-height: 24px;
 }
-
+header nav ul {
+  display:inline;
+  text-align: right;
+  float:right;
+  margin:0;
+}
+header nav ul > li.btn-outline {
+  padding: 10px 15px;
+  border: 2px solid #FFFFFF;
+  border-radius:4px;
+}
+}
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -66,6 +105,7 @@ img {
   .one-third {
     width:29.33333%;
     }
+
 }
 @media (min-width: 992px) {
   .container {
@@ -74,13 +114,17 @@ img {
   .one-fourth {
     width:21%;
   }
+   .hero p {
+   font-size: 22px;
+   line-height: 26px;
+   }
+   .hero h1 {
+   font-size:48px;
+   font-weight: normal;
+   margin:95px 0 0;
+ }
 }
 
-@media (min-width: 1200px) {
-  .container {
-    width:1170px;
-  }
-}
 
 /* HEADER */
 
@@ -92,21 +136,11 @@ header {
 header nav {
   padding: 1em 0;
 }
-header nav ul {
-  display:inline;
-  text-align: right;
-  float:right;
-  margin:0;
-}
+
 header nav ul > li {
   list-style-type: none;
   display: inline-block;
   margin: 0 15px;
-}
-header nav ul > li.btn-outline {
-  padding: 10px 15px;
-  border: 2px solid #FFFFFF;
-  border-radius:4px;
 }
 header nav ul > li.btn-outline:hover {
   background:#FFFFFF;
@@ -124,13 +158,10 @@ header .hero {
    position: relative;
  }
  header .hero h1 {
-   font-size:48px;
    font-weight: normal;
-   margin:95px 0 0;
  }
+
  header .hero p {
-   font-size: 22px;
-   line-height: 26px;
    font-weight: 100;
    margin:10px 0 40px;
  }
