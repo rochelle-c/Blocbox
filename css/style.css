@@ -46,7 +46,6 @@ img {
   min-height: 1px;
   margin:0 2% 20px;
 }
-
 @media screen and (max-width: 599px) {
   .container {
     width: 90%;
@@ -65,11 +64,24 @@ header nav ul {
   text-align: right;
   float:right;
   margin:0;
+  font-size: 13px;
 }
 header nav ul > li.btn-outline {
-  padding: 8px 10px;
+  padding: 6px 6px;
   border: 2px solid #FFFFFF;
   border-radius:4px;
+}
+header nav ul > li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 6px;
+}
+.mobile-half {
+  width: 96%
+  float:left;
+  position:relative;
+  min-height: 1px;
+  margin:0 2% 16px;
 }
 }
 
@@ -97,6 +109,18 @@ header nav ul > li.btn-outline {
   border: 2px solid #FFFFFF;
   border-radius:4px;
 }
+header nav ul > li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 15px;
+}
+.mobile-half {
+  width: 96%
+  float:left;
+  position:relative;
+  min-height: 1px;
+  margin:0 2% 20px;
+}
 }
 @media (min-width: 768px) {
   .container {
@@ -109,7 +133,7 @@ header nav ul > li.btn-outline {
 }
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    width: 974px;
   }
   .one-fourth {
     width:21%;
@@ -137,11 +161,6 @@ header nav {
   padding: 1em 0;
 }
 
-header nav ul > li {
-  list-style-type: none;
-  display: inline-block;
-  margin: 0 15px;
-}
 header nav ul > li.btn-outline:hover {
   background:#FFFFFF;
 }
