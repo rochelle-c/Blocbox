@@ -46,6 +46,9 @@ img {
   min-height: 1px;
   margin:0 2% 20px;
 }
+
+/* MEDIA QUERIES */
+
 @media screen and (max-width: 599px) {
   .container {
     width: 90%;
@@ -129,14 +132,30 @@ header nav ul > li {
   .one-third {
     width:29.33333%;
     }
+    .one-fourth {
+      width:46%;
+    }
+    footer{
+      background-color: #19607D;
+      background-image: linear-gradient(to left,
+         #19607D 0%, #19607D 33.33337%, #15425E 33.33337%, #15425E 100%);
+      height: 100px;
+    }
+    footer p, footer nav ul{
+      padding: 2em 0;
+      text-align: left;
+    }
+    footer .right-footer-block {
+      background-color: #19607D;
+    }
+    footer .logo{
+      padding: 2em 0 2em 1.5em;
+    }
 
 }
 @media (min-width: 992px) {
   .container {
     width: 974px;
-  }
-  .one-fourth {
-    width:21%;
   }
    .hero p {
    font-size: 22px;
@@ -147,6 +166,15 @@ header nav ul > li {
    font-weight: normal;
    margin:95px 0 0;
  }
+ .one-fourth {
+   width:21%;
+ }
+
+ @media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
 }
 
 
@@ -354,17 +382,39 @@ header .hero {
    font-size:13px;
    margin-top: 30px;
  }
-.testimonies-staggered {
-  margin-top:20px;
+ .testimonies-staggered {
+   margin-top:20px;
+ }
+
+/* SIGNUP */
+
+.signup {
+  color:#FFFFFF;
+  background: #19607D;
+  background-image: linear-gradient(50deg, rgba(25,96,125,0.50) 7%, #00A694 100%);
+  text-align: center;
+  display:block;
+  position: relative;
+   padding:4em 0;
 }
+
+ .signup h2 {
+   font-weight: normal;
+ }
+
+ .signup p {
+   font-weight: 100;
+   margin:10px 0 40px;
+
+ }
 
 /* FOOTER */
 footer {
-  background-color: #19607D;
+  background-color: #15425E;
   background-image: linear-gradient(to top,
-     #00A694 0%, #00A694 50%, #19607D 50%, #19607D 100%);
+     #19607D 0%, #19607D 50%, #15425E 50%, #15425E 100%);
   color: #FFFFFF;
-  height: 150px;
+  height: 250px;
   position: relative;
   overflow: hidden;
   z-index: 0;
@@ -387,16 +437,17 @@ footer .right-footer-block {
   background-color: transparent;
 }
 footer .logo{
-  padding: 2.35em 0;
+  padding: 3em 0;
   margin: 0 auto;
   display: block;
 }
 
-@media (min-width: 992px){
+
+@media (min-width: 768px){
    footer{
-     background-color: #00A694;
+     background-color: #19607D;
      background-image: linear-gradient(to left,
-        #00A694 0%, #00A694 33.33337%, #19607D 33.33337%, #19607D 100%);
+        #19607D 0%, #19607D 33.33337%, #15425E 33.33337%, #15425E 100%);
      height: 100px;
    }
    footer p, footer nav ul{
@@ -404,7 +455,7 @@ footer .logo{
      text-align: left;
    }
    footer .right-footer-block {
-     background-color: #00A694;
+     background-color: #19607D;
    }
    footer .logo{
      padding: 2em 0 2em 1.5em;
