@@ -46,45 +46,50 @@ img {
   min-height: 1px;
   margin:0 2% 20px;
 }
+.mobile-half {
+  display:block;
+}
 
 /* MEDIA QUERIES */
+
 
 @media screen and (max-width: 599px) {
   .container {
     width: 90%;
   }
   .hero h1 {
-   font-size:36x;
+   font-size:36px;
    font-weight: normal;
-   margin:50px 0 0;
+   margin:0px 0 0;
  }
  .hero p {
    font-size: 18px;
    line-height: 22px;
+ }
+.mobile-half {
+  width: 96%
+  float:center;
+  text-align:center;
+  position:relative;
+  min-height: 1px;
+  margin:20px 2% 16px;
 }
 header nav ul {
-  display:inline;
-  text-align: right;
-  float:right;
-  margin:0;
-  font-size: 13px;
+  text-align: center;
+  float:center;
+  padding: 1em 0;
+  margin: 15px auto;
+  display: block;
 }
 header nav ul > li.btn-outline {
-  padding: 6px 6px;
+  padding: 10px 15px;
   border: 2px solid #FFFFFF;
   border-radius:4px;
 }
 header nav ul > li {
   list-style-type: none;
   display: inline-block;
-  margin: 0 6px;
-}
-.mobile-half {
-  width: 96%
-  float:left;
-  position:relative;
-  min-height: 1px;
-  margin:0 2% 16px;
+  margin: 0 20px;
 }
 }
 
@@ -186,9 +191,8 @@ header {
   background-image: linear-gradient(-180deg, rgba(25,96,125,0.50) 7%, #00A694 100%);
 }
 header nav {
-  padding: 1em 0;
+  padding:1em 0;
 }
-
 header nav ul > li.btn-outline:hover {
   background:#FFFFFF;
 }
@@ -197,7 +201,7 @@ header nav ul > li > a {
   text-decoration: none;
 }
 header nav ul > li.btn-outline:hover > a {
-  color: #19607D;
+  color:#19607D;
 }
 header .hero {
    text-align: center;
