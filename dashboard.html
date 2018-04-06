@@ -14,10 +14,14 @@
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
    <link rel="stylesheet" href="css/animate.css">
+   <link rel="stylesheet" href="css/dropit.css">
 
  </head>
 
  <body class="dashboard">
+   <!-- RESPONSIVE NAV -->
+   <a href="#" class="hamburger" id="menu">&#9776;</a>
+
    <!-- LEFT NAV -->
    <nav id="left-nav" class="left-nav">
      <a href="#" class="site-logo"><img src="images/site-logo.png" /></a>
@@ -37,19 +41,28 @@
        </ul>
      </div>
      <div class="settings">
-     <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg">
+     <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt="Joey Kirk">
      <p>Joey Kirk</p>
      <a href="#"><i class="fa fa-cog"></i></a>
    </div>
    </nav>
 
    <main role="main">
-   <!-- Benefits -->
+   <!-- CONTENT -->
    <section class="content">
      <div class="container">
        <div class="header">
          <h1>All Items</h1>
-         <a href="#" class="btn">+ Add</a>
+         <ul class="menu">
+           <li>
+             <a href="#" class="btn">+ Add</a>
+             <ul>
+               <li><a href="#"><i class="far fa-file"></i> Note</a></li>
+                  <li><a href="#"><i class="far fa-image"></i> Image</a></li>
+                  <li><a href="#"><i class="fa fa-link"></i> Link</a></li>
+              </ul>
+            </li>
+          </ul>
        </div>
      </div>
      <div class="container">
@@ -117,5 +130,13 @@ things!</p>
      </div>
    </section>
  </main>
+ <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/dropit.js"></script>
+  <script type="text/javascript">
+    $(".menu").dropit();
+    $("#menu").click(function() {
+      $("#left-nav").toggleClass("open", 200);
+    });
+  </script>
  </body>
  </html>
