@@ -44,6 +44,19 @@
      <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt="Joey Kirk">
      <p>Joey Kirk</p>
      <a href="#"><i class="fa fa-cog"></i></a>
+
+     <!-- SETTINGS MENU
+     <ul class="settings-menu">
+       <li>
+     <a href="#"><i class="fa fa-cog"></i></a>
+     <ul>
+        <li><a href="#"><i class="fa fa-file-o"></i> Note</a></li>
+        <li><a href="#"><i class="fa fa-picture-o"></i> Image</a></li>
+        <li><a href="#"><i class="fa fa-link"></i> Link</a></li>
+                </ul>
+              </li>
+            </ul>
+          -->
    </div>
    </nav>
 
@@ -134,6 +147,7 @@ things!</p>
   <script src="js/dropit.js"></script>
   <script type="text/javascript">
     $(".menu").dropit();
+    $(".settings-menu").dropit();
     $("#menu").click(function() {
       $("#left-nav").toggleClass("open", 200);
     });
