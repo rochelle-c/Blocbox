@@ -68,7 +68,7 @@ img {
  }
 .mobile-half {
   width: 96%
-  float:center;
+  float:none;
   text-align:center;
   position:relative;
   min-height: 1px;
@@ -180,7 +180,7 @@ header nav ul > li {
     width: 1170px;
   }
 }
-}
+
 
 
 /* HEADER */
@@ -515,6 +515,10 @@ footer .logo{
   text-align: center;
   margin-right:8px;
 }
+.left-nav a.active {
+  background: #00A694;
+}
+
 
 
 /* LEFT NAVBAR SETTINGS */
@@ -670,5 +674,4 @@ footer .logo{
   color: #333333;
   line-height:18px;
   margin:5px 0 0;
-
 }
