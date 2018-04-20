@@ -579,7 +579,6 @@ img {
     left: 0;
     right: 0;
     padding: 10px 0;
-
   }
   .left-nav .settings img {
     height: 35px;
@@ -603,6 +602,11 @@ img {
     margin-right: 10px;
     margin-top: 8px;
   }
+  .left-nav .settings ul {
+    margin-top: 0px;
+    padding: 0;
+  }
+
 
   /* DASHBOARD CONTENT */
   .content {
